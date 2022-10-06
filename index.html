@@ -10,31 +10,31 @@
 </head>
 <body>
 
-    <div class="form">
+    <form class="form" action="#"  method="post">
         <div class="title">Sing in</div>
-        <!-- <div> -->
+        <div>
             <label id="userName">
-                <input type="text" name="" id="">
+                <input type="text" name="userName" id="" data-more="2" class="validation">
                 <span>User Name</span>
             </label>
-            <!-- <div class="input-error">Value must be more than 2 symbols</div> -->
-        <!-- </div> -->
+            <div class="input-fail">Value must be more than 2 symbols</div>
+        </div>
         <div>
             <label id="email">
-                <input type="email">
+                <input type="email" name="email" data-email="2" class="validation">
                 <span>Email</span>
             </label>
             <div class="input-error">Value must be more than 2 symbols</div>
         </div>
-        <!-- <div> -->
+        <div>
             <label id="phone">
-                <input type="tel">
+                <input type="tel" name="phone" data-number="true" data-more="9" class="validation">
                 <span>Phone</span>
             </label>
-            <!-- <div class="input-error">Value must be more than 2 symbols</div> -->
-        <!-- </div> -->
+            <div class="input-error-fail">Value must be more than 2 symbols</div>
+        </div>
         <div class="button">Enter</div>
-    </div>
+    </form>
 
 
 
